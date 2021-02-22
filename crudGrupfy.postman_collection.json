@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "86cbbe5e-996b-430f-9ef6-1a1466cc156b",
+		"name": "crudGrupfy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost/cadastrar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\":\"testenome\", \"login\":\"testelogin\", \"senha\":\"testesenha\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/cadastrar",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/logar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"login\":\"testelogin\", \"senha\":\"testesenha\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/logar",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"logar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/inserirRegistro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\":\"Fazer Compras\", \"dataregistro\":\"2021-02-22\", \"complemento\":\"Verificar o Limite do Cartão\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/inserirRegistro",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"inserirRegistro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/registros",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/registros",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"registros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/usuarios",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/usuarios",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/deletarRegistro/:id_register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/deletarRegistro/:id_register",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"deletarRegistro",
+						":id_register"
+					],
+					"variable": [
+						{
+							"key": "id_register",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/atualizarRegistro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id_register\":8, \"nome\":\"testeatualiz\", \"dataregistro\":\"2020-05-19\", \"complemento\":\"complatualizar\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/atualizarRegistro",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"atualizarRegistro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/atualizarUsuario",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nome\":\"teste\", \"login\":\"teste\", \"senha\":\"teste\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/atualizarUsuario",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"atualizarUsuario"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
